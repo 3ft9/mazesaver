@@ -7,15 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1778C6251DF4A5F10043D153 /* mazesaverView.h in Headers */ = {isa = PBXBuildFile; fileRef = 1778C6241DF4A5F10043D153 /* mazesaverView.h */; };
-		1778C6271DF4A5F10043D153 /* mazesaverView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1778C6261DF4A5F10043D153 /* mazesaverView.m */; };
+		1778C6251DF4A5F10043D153 /* MazeSaverView.h in Headers */ = {isa = PBXBuildFile; fileRef = 1778C6241DF4A5F10043D153 /* MazeSaverView.h */; };
+		1778C6271DF4A5F10043D153 /* MazeSaverView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1778C6261DF4A5F10043D153 /* MazeSaverView.m */; };
+		1778C6301DF4A88E0043D153 /* Cell.h in Headers */ = {isa = PBXBuildFile; fileRef = 1778C62E1DF4A88E0043D153 /* Cell.h */; };
+		1778C6311DF4A88E0043D153 /* Cell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1778C62F1DF4A88E0043D153 /* Cell.m */; };
+		1778C6341DF4C4A30043D153 /* mazesaver.saver in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1778C6211DF4A5F10043D153 /* mazesaver.saver */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		1778C6331DF4C4780043D153 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "/Users/stuart/Library/Screen Savers";
+			dstSubfolderSpec = 0;
+			files = (
+				1778C6341DF4C4A30043D153 /* mazesaver.saver in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1778C6211DF4A5F10043D153 /* mazesaver.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mazesaver.saver; sourceTree = BUILT_PRODUCTS_DIR; };
-		1778C6241DF4A5F10043D153 /* mazesaverView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = mazesaverView.h; sourceTree = "<group>"; };
-		1778C6261DF4A5F10043D153 /* mazesaverView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mazesaverView.m; sourceTree = "<group>"; };
+		1778C6241DF4A5F10043D153 /* MazeSaverView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MazeSaverView.h; sourceTree = "<group>"; };
+		1778C6261DF4A5F10043D153 /* MazeSaverView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MazeSaverView.m; sourceTree = "<group>"; };
 		1778C6281DF4A5F10043D153 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1778C62E1DF4A88E0043D153 /* Cell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cell.h; sourceTree = "<group>"; };
+		1778C62F1DF4A88E0043D153 /* Cell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,9 +66,11 @@
 		1778C6231DF4A5F10043D153 /* mazesaver */ = {
 			isa = PBXGroup;
 			children = (
-				1778C6241DF4A5F10043D153 /* mazesaverView.h */,
-				1778C6261DF4A5F10043D153 /* mazesaverView.m */,
+				1778C6241DF4A5F10043D153 /* MazeSaverView.h */,
+				1778C6261DF4A5F10043D153 /* MazeSaverView.m */,
 				1778C6281DF4A5F10043D153 /* Info.plist */,
+				1778C62E1DF4A88E0043D153 /* Cell.h */,
+				1778C62F1DF4A88E0043D153 /* Cell.m */,
 			);
 			path = mazesaver;
 			sourceTree = "<group>";
@@ -62,7 +82,8 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1778C6251DF4A5F10043D153 /* mazesaverView.h in Headers */,
+				1778C6301DF4A88E0043D153 /* Cell.h in Headers */,
+				1778C6251DF4A5F10043D153 /* MazeSaverView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +98,7 @@
 				1778C61D1DF4A5F00043D153 /* Frameworks */,
 				1778C61E1DF4A5F00043D153 /* Headers */,
 				1778C61F1DF4A5F00043D153 /* Resources */,
+				1778C6331DF4C4780043D153 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -98,6 +120,7 @@
 				TargetAttributes = {
 					1778C6201DF4A5F00043D153 = {
 						CreatedOnToolsVersion = 8.1;
+						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -134,7 +157,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1778C6271DF4A5F10043D153 /* mazesaverView.m in Sources */,
+				1778C6271DF4A5F10043D153 /* MazeSaverView.m in Sources */,
+				1778C6311DF4A88E0043D153 /* Cell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,11 +255,17 @@
 		1778C62C1DF4A5F10043D153 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = mazesaver/Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				PRODUCT_BUNDLE_IDENTIFIER = com.3ft9.mazesaver;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "mazesaver/mazesaver-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				WRAPPER_EXTENSION = saver;
 			};
 			name = Debug;
@@ -243,11 +273,16 @@
 		1778C62D1DF4A5F10043D153 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = mazesaver/Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				PRODUCT_BUNDLE_IDENTIFIER = com.3ft9.mazesaver;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "mazesaver/mazesaver-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 				WRAPPER_EXTENSION = saver;
 			};
 			name = Release;
@@ -271,6 +306,7 @@
 				1778C62D1DF4A5F10043D153 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

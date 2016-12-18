@@ -21,6 +21,6 @@
 	<key>NSHumanReadableCopyright</key>
 	<string>Copyright © 2016 3ft9 Ltd. All rights reserved.</string>
 	<key>NSPrincipalClass</key>
-	<string>mazesaverView</string>
+	<string>MazeSaverView</string>
 </dict>
 </plist>
