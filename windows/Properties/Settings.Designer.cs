@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MazeSaver.Properties
+namespace ReactionDiffusionSaver.Properties
 {
 
 
